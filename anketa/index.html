@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ruta-Care · Анкета доглядальниці / сиделки</title>
+<meta name="description" content="Анкета доглядальниці / сиделки. Оберіть мову / Выберите язык.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FBF8F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#22241F" media="(prefers-color-scheme: dark)">
+<style>
+  :root {
+    --bg: #FBF8F2; --card: #FFFFFF; --text: #3A3D38; --muted: #6B6E66; --hint: #8A8C84;
+    --brand: #6F8E38; --btn1-bg: #88A84E; --btn1-text: #FFFFFF; --btn1-hover: #7A9944;
+    --btn2-bg: #FFFFFF; --btn2-text: #3A3D38; --btn2-border: #F4A261; --btn2-hover: #FFF4EA;
+    --ring: #F4A261;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #22241F; --card: #2A2D27; --text: #EDEEE8; --muted: #B5B7AE; --hint: #8E9088;
+      --brand: #A9C46C; --btn1-bg: #A9C46C; --btn1-text: #22241F; --btn1-hover: #B8D07E;
+      --btn2-bg: transparent; --btn2-text: #F4A261; --btn2-border: #F4A261; --btn2-hover: rgba(244,162,97,.12);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: "Nunito", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh; min-height: 100dvh; padding: 24px 16px;
+  }
+  main { width: 100%; max-width: 400px; text-align: center; }
+  .logo { width: 200px; height: auto; display: block; margin: 0 auto 28px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  h1 { font-size: 30px; font-weight: 700; color: var(--brand); margin: 0; letter-spacing: .2px; }
+  .sub { font-size: 15px; color: var(--muted); margin: 0 0 36px; line-height: 1.5; }
+  .choose { font-size: 20px; font-weight: 700; margin: 0; }
+  .choose-ru { font-size: 16px; color: var(--muted); margin: 2px 0 18px; }
+  .btns { display: flex; flex-direction: column; gap: 14px; }
+  .btn {
+    display: flex; align-items: center; justify-content: center;
+    height: 58px; border-radius: 16px; font-size: 18px; font-weight: 700;
+    text-decoration: none; transition: background-color .15s, transform .1s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn:active { transform: scale(.98); }
+  .btn:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; }
+  .btn-ua { background: var(--btn1-bg); color: var(--btn1-text); }
+  .btn-ua:hover { background: var(--btn1-hover); }
+  .btn-ru { background: var(--btn2-bg); color: var(--btn2-text); border: 2px solid var(--btn2-border); }
+  .btn-ru:hover { background: var(--btn2-hover); }
+  .time { font-size: 13px; color: var(--hint); margin: 30px 0 0; line-height: 1.6; }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="Ruta-Care" width="448" height="300">
+  <h1 class="sr-only">Ruta-Care</h1>
+  <p class="sub">Анкета доглядальниці / сиделки<br>Німеччина · Польща</p>
+
+  <p class="choose">Оберіть мову</p>
+  <p class="choose-ru" lang="ru">Выберите язык</p>
+
+  <nav class="btns" aria-label="Оберіть мову / Выберите язык">
+    <a class="btn btn-ua" lang="uk" href="https://docs.google.com/forms/d/167af_jianfTpJOV_I85XvQn5N_HpsDuxbrCu4-fffsM/viewform">Українська</a>
+    <a class="btn btn-ru" lang="ru" href="https://docs.google.com/forms/d/1APW4Xkktilum8_yP6HuTP49NN0OGPcJ6GiW3-Jh5SjQ/viewform">Русский</a>
+  </nav>
+
+  <p class="time">Заповнення займає 20 хвилин<br><span lang="ru">Заполнение занимает 20 минут</span></p>
+</main>
+</body>
+</html>
